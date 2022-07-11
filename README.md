@@ -20,5 +20,4 @@ With a mobile first plan, my gaol for the users was to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
