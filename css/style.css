@@ -1,0 +1,134 @@
+*{
+    font-family: 'Arima', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:var(--cream);
+}
+.container{
+    width: 330px;
+    height: 610px;
+    margin: 0  auto;
+    background: var(--white);
+    border-radius: 10px;
+}
+.img-container {
+    height: 38%;
+    width: 100%;
+    background: url(/challenge1/images/image-product-mobile.jpg) center center/cover no-repeat;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.main-container{
+    padding: 20px;
+}
+
+.main-container .per{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkGrayishBlue)
+}
+
+.main-container h1{
+    font-family: 'Fraunces', serif;
+    margin: 10px 0;
+}
+
+.main-container p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    color: var(--darkGrayishBlue);
+}
+
+.prices{
+margin:15px 0;
+}
+
+.prices span:first-child{
+color: var(--darkCyan);
+font-family: 'Fraunces', serif;
+font-size: 1.9rem;
+
+}
+.prices span:last-child{
+    text-decoration: line-through;
+    color: var(--darkGrayishBlue);
+    margin-left: 17px;
+    font-size: .7rem;
+    vertical-align:super;
+}
+.btn-sec{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--darkCyan);
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+    color: var(--white);
+    transition: .5s;
+}
+.btn-sec:hover{
+    background: var(--veryDarkBlue);
+    cursor: pointer;
+}
+.btn-sec img{
+    width: 15px;
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+.btn-sec span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    font-family: 700;
+}
+@media only screen and (min-width: 600px){
+    .container{
+       display: flex;
+       width: 580px;
+       height: 450px;
+    }
+     .img-container{
+        width: 50%;
+        height: 100%;
+        background: url(/challenge1/images/image-product-desktop.jpg) no-repeat center center/cover;
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .main-container{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        margin: 25px;
+    }  
+    .main-container h1{
+
+    }
+ 
+}
+
